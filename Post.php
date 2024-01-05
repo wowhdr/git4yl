@@ -1,5 +1,7 @@
 <?php
 
+include_once("Tag.php");
+
 class Post {
 
     private $title;
@@ -14,7 +16,12 @@ class Post {
 
         $this->title = $title;
         $this->body = $body;
-        $this->tags = $tags;
+
+        foreach ($tags as $tag) {
+            $temp = new Tag;
+            $temp->create("tag");
+            $this->tags[] = $temp;
+        }
     }
 
     function tags() {
