@@ -32,12 +32,9 @@ class User {
         return "Success";
     }
 
-    function posts() {
-
-        $post = new Post();
+    function add_post($post) {
+                
+        $this->posts[] = $post;
         
-        $this->posts = $post->get_by_user($this->id);
-
-        return $this->posts;
     }
 }
