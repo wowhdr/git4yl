@@ -33,6 +33,8 @@ class User {
     }
 
     function add_post($post) {
+
+        $post->set_author($this->name);
                 
         $this->posts[] = $post;
         

@@ -24,6 +24,11 @@ class Post {
         }
     }
 
+    function set_author($name) {
+
+        $this->author = $name;
+    }
+
     function tags() {
 
         // Post has many tags
