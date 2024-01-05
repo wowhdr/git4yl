@@ -2,15 +2,19 @@
 
 class Tag {
 
-    $name;
+    private $name;
     
-    function create() {
+    function create($name) {
 
         // Create new tag
+        $this->name = $name;
+
+        $this->save();
     }
 
     function save() {
 
         // Insert to database
+        return "success";
     }
 }

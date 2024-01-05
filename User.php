@@ -1,5 +1,7 @@
 <?php
 
+include_once('Post.php');
+
 class User {
 
     private $id;
