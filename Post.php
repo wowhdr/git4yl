@@ -29,18 +29,6 @@ class Post {
         $this->author = $name;
     }
 
-    function tags() {
-
-        // Post has many tags
-        return $this->tags;
-    }
-
-    function save() {
-
-        // save post in database
-        return "Success";
-    }
-
     function get_by_user($user_id) {
 
         return "SELECT * FROM USER WHERE id = ".$user_id;
