@@ -8,4 +8,9 @@ class Tag {
 
         // Create new tag
     }
+
+    function save() {
+
+        // Insert to database
+    }
 }
