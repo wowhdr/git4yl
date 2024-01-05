@@ -25,4 +25,9 @@ class Post {
 
         // save post in database
     }
+
+    function get_by_user($user_id) {
+
+        return "SELECT * FROM USER WHERE id = ".$user_id;
+    }
 }
