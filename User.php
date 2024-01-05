@@ -39,4 +39,9 @@ class User {
         $this->posts[] = $post;
         
     }
+
+    function posts() {
+
+                return $this->posts;
+        }
 }
