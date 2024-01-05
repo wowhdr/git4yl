@@ -7,4 +7,9 @@ class Post {
         // Create new post
         // Post belongs to user
     }
+
+    function tags() {
+
+        // Post has many tags
+    }
 }
