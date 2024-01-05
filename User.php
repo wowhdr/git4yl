@@ -6,4 +6,9 @@ class User {
 
         // Create new user
     }
+
+    function update() {
+
+        // Update user
+    }
 }
